@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    animation: changeBg 10s linear infinite;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes changeBg {
+
+    0%{
+        background-color: rgb(102, 228, 228);
+    }
+    20%{
+        background-color: rgb(78, 99, 216);
+    }
+    40%{
+        background-color: rgb(185, 77, 176);
+    }
+    60%{
+        background-color: rgb(226, 76, 111);
+    }
+    80%{
+        background-color: rgb(202, 216, 76);
+    }
+    100%{
+        background-color: aqua;
+    }
+    
+}
+.container{
+
+    height: 60%;
+    width: 30%;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    border: none;
+    box-shadow: 4px 4px 4px 4px rgb(109, 98, 98);
+}
+h1{
+    margin-top: 2%;
+}
+form{
+
+    
+    height: 80%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.amount{
+
+    margin-bottom: 2%;
+    height: 20%;
+    width: 90%;
+}
+img{
+
+    height: 30%;
+    width: 30%;
+}
+input{
+
+    width: 100%;
+    height: 50%;
+    background-color: wheat;
+    color: black;
+    font-size: 1rem;
+    margin-top: 2%;
+    border-radius: 2%;  
+}
+form p{
+
+    font-size: 1rem;
+    color: rgb(32, 28, 28);
+}
+.dropdown{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    height: 35%;
+    width: 90%;
+    border: 2px solid rgb(106, 97, 97);
+    box-shadow: 4px 4px 4px 4px rgb(137, 57, 57);
+}
+.msg{
+
+    margin-top: 5%;
+    height: 10%;
+    width: 90%;
+    border: 2px solid gray;
+}
+.btn{
+
+    margin-top: 2%;
+    height: 13%;
+    width: 80%;
+    border-radius: 5%;
+    background-color: hsl(0, 6%, 25%);
+    color: aliceblue;
+    font-size: 1rem;
+    box-shadow: 4px 4px 4px 4px rgb(80, 70, 70);
+}
+.btn:hover{
+
+    background-color: hsl(0, 6%, 35%);
+}
+.btn:active{
+
+    background-color: hsl(0, 6%, 45%);
+}
+@media only screen and (max-width: 600px) {
+    
+    .container{
+
+        height: 70%;
+        width: 70%;
+        background-color: aliceblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    body div h1{
+
+        margin-left: 4%;
+        font-size: 0.8rem;
+    }
+    .msg{
+
+        margin-top: 4%;
+        height: 10%;
+        width: 90%;
+        margin-bottom: 2%;
+        font-size: 0.8rem;
+        padding-top: 4%;
+    }
+    i{
+
+        margin-right: 7%;
+    }
+}
